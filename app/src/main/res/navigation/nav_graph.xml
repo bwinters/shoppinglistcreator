@@ -6,8 +6,8 @@
 
     <fragment
         android:id="@+id/storeFragment"
-        android:name="com.brandonwinters.shoppinglistcreator.ui.StoreFragment"
+        android:name="com.brandonwinters.shoppinglistcreator.ui.StoresFragment"
         android:label="Stores"
-        tools:layout="@layout/fragment_store" />
+        tools:layout="@layout/fragment_stores" />
 
 </navigation>

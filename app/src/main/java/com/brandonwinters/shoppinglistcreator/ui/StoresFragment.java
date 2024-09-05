@@ -30,9 +30,7 @@ public class StoresFragment extends Fragment {
         recyclerView.setAdapter(storesAdapter);
 
         storesViewModel = new ViewModelProvider(this).get(StoresViewModel.class);
-        storesViewModel.getAllStores().observe(getViewLifecycleOwner(), stores -> {
-            storesAdapter.setStoresList(stores);
-        });
+        storesViewModel.getAllStores().observe(getViewLifecycleOwner(), stores -> storesAdapter.setStoresList(stores));
 
         return view;
     }
